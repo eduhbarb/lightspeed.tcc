@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Righteous&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+    /*-- PREVINE DE SELECIONAR COISAS DO SITE --*/
+    /*
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; 
+*/
+}
+
+
+body {
+    font-size: 100%;
+    color: white;
+    background: url('../bg-stars.png'), #1C1D1F;
+    background-position: top;
+    background-repeat: repeat;
+    background-size: 100vw;
+    overflow-x: hidden;
+}
+
+img {
+        /*-- PREVINE DE ROUBAR IMAGEM --*/  
+    pointer-events: none
+}
+
+
+/* ----------- SESSÃO HEADER ----------- */
+/* ----------- SESSÃO HEADER ----------- */
+/* ----------- SESSÃO HEADER ----------- */
+/* ----------- SESSÃO HEADER ----------- */
+
+.conteudo-satelite{
+    animation: float 3s linear infinite;
+    filter: drop-shadow(5px 15px 22px rgba(0, 0, 0, 0.6));
+}
+
+@keyframes float {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(-20px);
+	}
+	100% {
+        
+		transform: translatey(0px);
+	}
+}
+
+
+.header{
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    padding-top: 1rem;
+    background-color: #111111ab;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   
+    
+    
+}
+.header-logo-lightspeed {
+    width: 220px;
+}
+
+.header-menu-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.header-menu-item-1 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(247, 247, 247);
+}
+
+.menu-item-header{
+    display: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.menu-item-header a{
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+
+.menu-item-header :hover{
+    overflow: hidden;
+    font-size: 1.7rem;
+    
+}
+
+.menu-item-login button{
+
+    color: rgb(17, 17, 17);
+    font-weight: 700;
+    background: yellow;
+    padding: 10px;
+    padding-inline: 20px;
+    border: 0px transparent;
+    background: -webkit-linear-gradient(rgb(245, 159, 0), rgb(255, 196, 0) );
+    border-top-left-radius: 25px;
+    border-bottom-right-radius:  25px;
+    cursor: pointer;
+}
+
+
+.texto-login{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ----------- SESSÃO HEADER ----------- */
+/* ----------- SESSÃO HEADER ----------- */
+/* ----------- SESSÃO HEADER ----------- */
+/* ----------- SESSÃO HEADER ----------- */
+
+
+
+
+/* ----------- SESSÃO SATELITE ----------- */
+/* ----------- SESSÃO SATELITE ----------- */
+/* ----------- SESSÃO SATELITE ----------- */
+/* ----------- SESSÃO SATELITE ----------- */
+.conteudo-principal  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    gap: 60px;
+    height: 85vh;
+    margin-bottom: -20px;
+
+
+}
+
+.conteudo-satelite-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+
+.conteudo-satelite-texto-titulo {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 74px;
+
+}
+
+.conteudo-satelite-texto-subtitulo {
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+.conteudo-satelite-info{
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+
+}
+
+.conteudo-satelite-info p{
+    font-size: 1.1rem;
+}
+
+.conteudo-satelite-imagem {
+        width: 800px;
+
+}
+
+
+/* ----------- SESSÃO SATELITE ----------- */
+/* ----------- SESSÃO SATELITE ----------- */
+/* ----------- SESSÃO SATELITE ----------- */
+/* ----------- SESSÃO SATELITE ----------- */
+
+
+
+
+/* ----------- SESSÃO PLANOS ----------- */
+/* ----------- SESSÃO PLANOS ----------- */
+/* ----------- SESSÃO PLANOS ----------- */
+/* ----------- SESSÃO PLANOS ----------- */
+
+.planos-heading{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    -webkit-background-clip: text;
+    color: rgb(255, 196, 0);
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+}
+.planos .planos-box-container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 2rem;
+    margin-inline: 50px;
+}
+
+.planos .planos-box-container .planos-box{
+    display: flex;
+    flex-direction: column;
+    flex:1 1 20rem;
+    margin:1rem;
+    padding:1rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    min-height: 500px;
+
+
+    box-shadow:0px 0px 21px -5px rgba(0, 0, 0, 0.479);
+    /*ANIMACAO DO HOVER*/
+    
+
+    -webkit-transition-property: border;
+    border:4px solid transparent;
+    background: linear-gradient(rgba(27, 27, 27, 0.555), rgb(14, 14, 14)) padding-box,
+        linear-gradient(to right,rgba(194, 187, 187, 0), rgba(27, 27, 27, 0)) border-box;
+    border-radius: 0.6rem;
+    transition: all .15s ease-in-out;
+
+
+}
+
+.planos .planos-box-container .planos-box:hover{
+    border:4px solid transparent;
+    background: linear-gradient(rgb(7, 7, 7), rgb(5, 5, 5)) padding-box,
+        linear-gradient(to right,  rgb(245, 147, 0), rgb(255, 217, 0) ) border-box;
+    border-radius: 0.6rem;
+    box-shadow:0px 0px 21px -5px rgba(255, 166, 0, 0.678);
+
+    /*
+        background:url(../images/wave-bg.png) no-repeat;
+    background-size: cover;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+    */
+    
+}
+
+.planos-box span {
+    font-size: 1.2rem;
+    color:rgb(133, 133, 133);
+}
+
+.planos-box ul li{
+    color:rgb(209, 46, 46);
+}
+
+
+.preco-minimo span{
+    font-size: 0.8rem;
+    color:rgb(219, 219, 219);
+    text-transform: uppercase;
+}
+
+.planos-titulo{
+    text-transform: uppercase;
+}
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.planos .planos-box-container .planos-box .planos-titulo{
+    color: rgb(255, 154, 3);
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.planos .planos-box-container .planos-box .planos-valor{
+    font-size: 4rem;
+    color: rgb(255, 209, 3);
+    padding:1rem 0;
+}
+
+.planos .planos-box-container .planos-box .planos-valor span{
+    font-size: 2rem;
+}
+
+.planos .planos-box-container .planos-box ul{
+    padding:1rem 0;
+    list-style: none;
+}
+
+.planos .planos-box-container .planos-box ul li{
+    font-size: 1.5rem;
+    color:rgb(175, 175, 175);
+    padding:.5rem 0;
+}
+
+.planos .planos-box-container .planos-box ul li .fa-check{
+    color:lightgreen;
+}
+
+.planos .planos-box-container .planos-box ul li .fa-times{
+    color:tomato;
+}
+
+.planos-botao{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    border-radius: 5rem;
+    background: -webkit-linear-gradient(rgb(245, 147, 0), rgb(255, 217, 0) );
+    font-size: 1.7rem;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border: 0px rgba(255, 255, 255, 0) solid;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .15s linear;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.planos-botao:hover{
+    transform: scale(0.90);
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-11-7 20:45:15
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-ver-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+  }
+  @keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+  }
+  
+
+/* ----------- SESSÃO PLANOS ----------- */
+/* ----------- SESSÃO PLANOS ----------- */
+/* ----------- SESSÃO PLANOS ----------- */
+/* ----------- SESSÃO PLANOS ----------- */
+
+
+
+
+
+/* ----------- SESSÃO RODAPE ----------- */
+/* ----------- SESSÃO RODAPE ----------- */
+/* ----------- SESSÃO RODAPE ----------- */
+/* ----------- SESSÃO RODAPE ----------- */
+
+.rodape{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background:url(../images/footer-bg.png) no-repeat;
+    background-size: cover;
+    background-position: top;   
+}
+
+.rodape-coisas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rodape-logo-lightspeed {
+    width: 300px;
+}
+
+.rodape p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(12, 12, 12);
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.1));
+    
+}
+
+.rodape a {
+    cursor:pointer;
+    color: rgb(12, 12, 12);
+}
+
+.rodape img {
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.1));
+}
+
+.rodape-itens-sociais{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+  background: -webkit-linear-gradient(rgb(5, 5, 5), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.1));
+}
+
+/* ----------- SESSÃO RODAPE ----------- */
+/* ----------- SESSÃO RODAPE ----------- */
+/* ----------- SESSÃO RODAPE ----------- */
+/* ----------- SESSÃO RODAPE ----------- */
+
+
+/* ----------- SESSÃO NOSSA EQUIPE ----------- */
+/* ----------- SESSÃO NOSSA EQUIPE ----------- */
+/* ----------- SESSÃO NOSSA EQUIPE ----------- */
+/* ----------- SESSÃO NOSSA EQUIPE ----------- */
+
+
+.wrapper{
+    display: grid;
+    margin-inline: 5rem;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  .equipe-heading{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    -webkit-background-clip: text;
+    color: rgb(255, 196, 0);
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+    margin-bottom: 30px;
+}
+  
+  .our_team{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-inline: 10rem;
+  }
+  
+  .our_team .team_member{
+    width: 250px;
+    background-color: #1414148c;
+    padding: 20px 10px;
+    border-radius: .5rem;
+    border-width: 2px;
+    border-color: rgba(255, 3, 3, 0);
+    border-style: solid;
+    transition: all .15s ease-in-out;
+
+
+
+    box-shadow:0px 0px 21px -5px rgba(0, 0, 0, 0.733);
+
+  }
+ .team_member:hover{
+    border-radius: .5rem;
+    border-width: 2px;
+    border-color: rgb(255, 175, 3);
+    border-style: solid;
+    box-shadow:0px 0px 21px -5px rgba(255, 166, 0, 0.678);
+
+transform: scale(1.02);
+
+  }
+  
+  .our_team .team_member .member_img{
+    background: linear-gradient(50deg, rgb(224, 120, 0) 0%, rgb(238, 176, 5) 35%, rgba(255,235,0,1) 100%);
+    max-width: 190px;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 4px;
+    position: relative;
+    
+  }
+  
+  .our_team .team_member .member_img img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .our_team .team_member h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin: 15px 0 0px;
+  }
+  
+  .our_team .team_member span{
+    font-size: 15px;
+  }
+  
+  .our_team .team_member p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .our_team .team_member .member_img .social_media{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: rgba(0, 0, 0, 0.459);
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+     transition: all 0.2s ease;
+  }
+  
+  .our_team .team_member .member_img .social_media .item{
+    margin: 0 10px;
+  }
+  
+  .our_team .team_member .member_img .social_media .fab{
+    color: rgb(255, 175, 3);
+    font-size: 20px;
+  }
+  
+  .our_team .team_member .member_img:hover .social_media{
+    transform: scale(1);
+  }
+
+/* ----------- SESSÃO NOSSA EQUIPE ----------- */
+/* ----------- SESSÃO NOSSA EQUIPE ----------- */
+/* ----------- SESSÃO NOSSA EQUIPE ----------- */
+/* ----------- SESSÃO NOSSA EQUIPE ----------- */
+
+/* ----------- SESSÃO SOBRE NÓS ----------- */
+/* ----------- SESSÃO SOBRE NÓS ----------- */
+/* ----------- SESSÃO SOBRE NÓS ----------- */
+/* ----------- SESSÃO SOBRE NÓS ----------- */
+
+.sobrenos-heading{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    -webkit-background-clip: text;
+    color: rgb(255, 196, 0);
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+    
+}
+
+.conteudo-margin{
+    padding-bottom: 100px;
+}
+
+.sobrenos-conteudo{
+    padding: 3.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    color: white;
+}
+
+.sobrenos-texto{
+    text-align:  left;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 50%;
+    color: black;
+    
+}
+
+.sobrenos-texto h1{
+    font-size: 3rem;
+    font-weight: 1000;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.178));
+}
+
+.sobrenos-texto h2{
+    font-size: 1.5rem;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.178));
+}
+
+.sobrenos-texto p{
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.178));
+}
+
+.sobrenos-texto span{
+    font-weight: 700;
+    font-size: 1.2rem;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.178));
+    }
+
+.sobrenos-caixa{
+    width: 100%
+}
+
+.sobrenos-imagem img{
+    width: 100%;
+    transition: transform 0.25s;
+}
+
+.sobrenos-imagem{
+    overflow: hidden;
+    width: 120%;
+}
+  
+
+  .listinha-sobrenos{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+  }
+
+.listinha-sobrenos img{
+    width: 20px;
+}
+
+
+.bubble-bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bubble-bg img{
+    z-index: -1;
+    position: absolute;
+    bottom: -100px;
+    left: -115px;
+
+}
+
+
+/* ----------- SESSÃO SOBRE NÓS ----------- */
+/* ----------- SESSÃO SOBRE NÓS ----------- */
+/* ----------- SESSÃO SOBRE NÓS ----------- */
+/* ----------- SESSÃO SOBRE NÓS ----------- */
+
+
+/* ----------- SESSÃO QUALIDADES ----------- */
+/* ----------- SESSÃO QUALIDADES ----------- */
+/* ----------- SESSÃO QUALIDADES ----------- */
+/* ----------- SESSÃO QUALIDADES ----------- */
+
+
+.qualidades-area{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    max-width: 100%;
+    height: 42vh;
+    background: -webkit-linear-gradient(rgb(245, 147, 0), rgb(255, 217, 0) );
+    margin-bottom: 100px;
+    padding-inline: 10rem;
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+
+.qualidades-area button{
+    background: #f5f5f5;
+}
+
+.qualidades-itens{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.26));
+
+}
+
+.qualidades-itens-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.qualidades-itens-item img{
+
+    width: 160px;
+}
+
+.qualidades-itens-item-texto{
+    text-transform: uppercase;
+    inline-size: 280px; 
+    overflow: hidden;
+    
+}
+
+.qualidades-itens-item-texto p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-bottom: 1.1rem;
+}
+
+
+.qualidades-itens-item-texto span{
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+
+/* ----------- SESSÃO QUALIDADES ----------- */
+/* ----------- SESSÃO QUALIDADES ----------- */
+/* ----------- SESSÃO QUALIDADES ----------- */
+/* ----------- SESSÃO QUALIDADES ----------- */
+
+
+
+/* ----------- SESSÃO CELULAR ----------- */
+/* ----------- SESSÃO CELULAR ----------- */
+/* ----------- SESSÃO CELULAR ----------- */
+/* ----------- SESSÃO CELULAR ----------- */
+
+.conteudo-1-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    color: rgb(247, 247, 247);
+}
+
+.text-box{
+    text-align:  left;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 520px;
+    
+}
+
+.text-box .titulo{
+    font-size: 3rem;
+}
+
+.text-box .legenda{
+    padding-top: 1rem;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.conteudo-smartphone{
+    margin-inline: 20rem;
+}
+
+.blocagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.conteudo-1-2 .slides { 
+    width: 600px;
+  }
+
+  .conteudo-1-2 .chip { 
+    width: 450px;
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
+
+  .conteudo-1-2 .antena-e-roteador { 
+    width: 550px;
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
+
+
+.conteudo-1-2 .slides-hidden { 
+    display : none;
+    width: 0.1px;
+    height: 0.1px;
+  }
+
+  .smartphone-img{
+    filter: drop-shadow(5px 15px 22px rgba(0, 0, 0, 0.6));
+    animation: float 3s linear infinite;
+}
+
+.div-botao-adquiraja {
+    padding-top: 12vmin;
+    justify-content: center;
+    align-items: center;
+}
+.botao-adquiraja {
+    font-family: 'Fredoka', sans-serif;
+    background: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    border:4px solid transparent;
+    background: linear-gradient(rgb(7, 7, 7), rgb(5, 5, 5)) padding-box,
+        linear-gradient(to right,  rgb(245, 147, 0), rgb(255, 217, 0) ) border-box;
+    padding: 2vmin 17vmin;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3.2vmin;
+    transition: all 0.2s ease;
+}
+
+.botao-adquiraja:hover{
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+
+
+/*------CONTATO----*/
+.contato{
+    margin-bottom: 6rem;
+    }
+    
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-inline: 20rem;
+      overflow: hidden;
+      
+    }
+    
+    .formulario .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 4vmin;
+      font-family: 'Fredoka', sans-serif;
+      background: none;
+      color: #ffbb00;
+    }
+    
+    .formulario .titulo {
+    font-size: 2.4rem;
+    }
+    
+    .conteudo-form{
+      display: flex;
+      flex-direction: column;
+      gap: 3vmin;
+    }
+    
+    .contato-input {
+      border: none;
+      border-bottom: 1px solid #ffffff;
+      font-size: 2vmin;
+      padding: 1.5vmin;
+      background-color: #24242400;
+      color: #ffffff;
+      width: 70vmin;
+      transition: all 0.5s ease;
+    }
+    
+    .contato-input-mensagem{
+      border: none;
+      font-family: 'Fredoka', sans-serif;
+      border-bottom: 1px solid #ffffff;
+      font-size: 2vmin;
+      padding: 1.5vmin;
+      background-color: #24242400;
+      color: #e9e9e9;
+      width: 70vmin;
+      transition: all 0.5s ease;
+      overflow-wrap: break-word;  
+      word-wrap: break-word; 
+      word-break: break-word;
+      resize: none;
+    }
+    
+    .formulario button{
+      -webkit-transition: background-color 1000ms linear;
+      -moz-transition: background-color 1000ms linear;
+      -o-transition: background-color 1000ms linear;
+      -ms-transition: background-color 1000ms linear;
+      transition: background-color 1000ms linear;
+      font-family: 'Fredoka', sans-serif;
+      border: none;
+      padding: 1vmin;
+      font-size: 3vmin;
+      background-color: #dbdbdb;
+      transition: 0.3s all ease;
+      border-radius: 0.5vmin;
+    
+    
+    }
+    
+    .formulario button:hover{
+      background-color: #ffbb00;
+      cursor: pointer;
+    }
+    
+    
+    .contato-input-mensagem:focus {
+      outline: none;
+      border-bottom: 1px solid #ffbb00;
+    }
+    
+    .contato-input:focus {
+      outline: none;
+      border-bottom: 1px solid #ffbb00;
+    }
+    
+    .formulario .opcao-input{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2vmin;
+    }
+    
+
+
+
+/* ----------- SESSÃO CELULAR ----------- */
+/* ----------- SESSÃO CELULAR ----------- */
+/* ----------- SESSÃO CELULAR ----------- */
+/* ----------- SESSÃO CELULAR ----------- */
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ffc400 #363636;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #363636;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffc400;
+    border-radius: 10px;
+    border: 4.5px solid #363636;
+  }

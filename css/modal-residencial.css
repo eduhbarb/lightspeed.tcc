@@ -1,0 +1,424 @@
+
+
+
+
+
+
+
+
+
+
+
+.modal-plano-contrata{
+    font-family: 'Fredoka', sans-serif;
+    display: NONE;
+    position: fixed;
+    z-index: 3;
+
+}
+
+.modal-plano-contrata .conteudo{
+    color: rgb(250, 250, 250);
+    background: #1c1d1f;
+    padding: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: block;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    float: right;
+    transform: translate(-50%, -50%);
+    margin-top: -2vh;
+
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.712));
+    -webkit-border-top-left-radius: 100px;
+-webkit-border-bottom-right-radius: 100px;
+-moz-border-radius-topleft: 100px;
+-moz-border-radius-bottomright: 100px;
+border-top-left-radius: 100px;
+border-bottom-right-radius: 100px;
+
+}
+
+.modalfundoresidencial{
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0%;
+    width: 300vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.bloco-esquerdo .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffb922;
+}
+
+.bloco-esquerdo .container i{
+    font-size: 10.5rem;
+}
+.bloco-esquerdo .container h3{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.bloco-esquerdo .container .planos-valor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    
+}
+
+.bloco-esquerdo .container .planos-valor span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: gray;
+}
+
+.modal-plano-contrata .divisao{
+    width: 4px;
+    height: 30rem;
+    background-color: #ffb922;
+}
+
+.bloco-direito .forma-pagamento,.bloco-direito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bloco-direito .forma-pagamento h3{
+    font-size: 1.8rem;
+    color: #ffb922;
+}
+
+
+.bloco-direito .botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    color: #ffb922;
+}
+
+.bloco-direito .botoes button{
+    color: #ffb922;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.18rem solid #ffb922;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    padding-inline: 0.8rem;
+    font-size: 1.8rem;
+    transition: all 0.2s ease;
+}
+
+.bloco-direito .botoes button:hover{
+    color: #1a1919;
+    font-weight: bold;
+    background-color:#ffb922;
+
+}
+
+.bloco-direito .mostra-botao1{
+    display: none;
+}
+
+.bloco-direito .mostra-botao2{
+    display: block;
+}
+
+.bloco-direito .mostra-botao3{
+    display: none;
+}
+
+.bloco-direito .botao1 button:nth-child(1){
+    color: #1a1919;
+    font-weight: bold;
+    background-color:#ffb922;
+
+}
+
+.bloco-direito .botao2 button:nth-child(2){
+    color: #1a1919;
+    font-weight: bold;
+    background-color:#ffb922;
+}
+
+.bloco-direito .botao3 button:nth-child(3){
+    color: #1a1919;
+    font-weight: bold;
+    background-color:#ffb922;
+}
+
+
+
+
+/*PAGAMENTO CARTÃO*/
+/*PAGAMENTO CARTÃO*/
+/*PAGAMENTO CARTÃO*/
+/*PAGAMENTO CARTÃO*/
+/*PAGAMENTO CARTÃO*/
+
+
+.opcao-cartao-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+.opcao-cartao-input b{
+    color: #ffb922;
+    font-size: 1.2rem;
+}
+
+.opcao-cartao-input input{
+    color: #ffb922;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: bold;
+    font-family: 'Fredoka', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.18rem solid #ffb922;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    padding-inline: 0.8rem;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+}
+
+.container .container1, .container .container2{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+
+.info-cartao input{
+    width:100%;
+}
+
+.info-cvv input{
+    width:6.6rem;
+}
+
+.nome-titular input{
+    width:100%;
+}
+
+.info-data input{
+    width:2rem;
+}
+
+.opcao-cartao-input input:focus{
+    outline: none;
+    border: 0.18rem solid #ffb922;
+    border-radius: 0.4rem;
+}
+
+.bloco-direito .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.data-validade{
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
+.pagamento-cartao .container .botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.pagamento-cartao .container .botao button{
+    color: #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    background-color:#ffb922;
+    border-radius: 0.4rem;
+    padding: 0.6rem;
+    padding-inline: 4rem;
+    font-size: 1.8rem;
+    transition: all 0.2s ease;
+}
+
+.pagamento-cartao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*PAGAMENTO PIX*/
+/*PAGAMENTO PIX*/
+/*PAGAMENTO PIX*/
+/*PAGAMENTO PIX*/
+/*PAGAMENTO PIX*/
+
+.pagamento-pix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pagamento-pix .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+.imagem-qr{
+    width: 50%;
+}
+.imagem-qr img{
+    width: 100%;
+}
+
+.container .botao button{
+    color: #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    background-color:#ffb922;
+    border-radius: 0.4rem;
+    padding: 0.6rem;
+    padding-inline: 1.8rem;
+    font-size: 1.65rem;
+    transition: all 0.2s ease;
+}
+
+/*PAGAMENTO boleto*/
+/*PAGAMENTO boleto*/
+/*PAGAMENTO boleto*/
+/*PAGAMENTO boleto*/
+/*PAGAMENTO boleto*/
+
+.mostra-pix{
+    display: none;
+}
+.mostra-cartao{
+    display: block;
+}
+.mostra-boleto{
+    display: none;
+}
+
+
+.pagamento-boleto{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pagamento-boleto .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+.imagem-qr{
+    width: 50%;
+}
+.imagem-qr img{
+    width: 100%;
+}
+
+.container .botao button{
+    color: #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    background-color:#ffb922;
+    border-radius: 0.4rem;
+    padding: 0.6rem;
+    padding-inline: 1.8rem;
+    font-size: 1.65rem;
+    transition: all 0.2s ease;
+}
+
+
+
+
+.botao-cancel button{
+    color: #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+    background-color:#ff2f2f;
+    border-radius: 0.4rem;
+    padding: 0.6rem;
+    padding-inline: 1.8rem;
+    font-size: 1.65rem;
+    transition: all 0.2s ease;
+}
